@@ -87,6 +87,10 @@ header .logo a span {
   color: #fff;
 }
 
+.responsive-menu {
+  display: none;
+}
+
 /********** Section home **********/
 #home {
   background-image: linear-gradient(rgba(0, 0, 0, 0.1)),
@@ -423,6 +427,31 @@ footer p span {
   header .menu {
     display: none;
   }
+  header .menu.responsive {
+    display: flex;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    flex-direction: column;
+    background-color: #222;
+    align-items: unset;
+    animation: animate-menu 1s forwards;
+  }
+
+  header .menu.responsive li {
+    margin: 20px;
+    width: 100%;
+    padding-left: 20px;
+  }
+  /** Animation **/
+  @keyframes animate-menu {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(100%);
+    }
+  }
   .btn-reservation {
     display: none;
   }
@@ -503,6 +532,11 @@ footer p span {
     transition: 0.5s;
   }
 
+  .responsive-menu.active::after {
+    box-shadow: 0 0 0 #29d9d5;
+    transform: rotate(45deg);
+  }
+
   .responsive-menu::before {
     position: absolute;
     content: "";
@@ -511,5 +545,9 @@ footer p span {
     width: 28px;
     transform: translateY(10px);
     transition: 0.5s;
+  }
+
+  .responsive-menu.active::before {
+    transform: rotate(-45deg);
   }
 }
