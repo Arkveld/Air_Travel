@@ -176,3 +176,42 @@ header .logo a span {
 .find_trip form input[type="submit"]:hover {
   box-shadow: 0 0 10px #29d9d5;
 }
+
+/********** Section à propos **********/
+#about {
+  margin-top: 100px;
+  padding: 0 10%;
+  width: 100%;
+}
+
+.title {
+  text-transform: capitalize;
+  margin: 70px;
+  font-weight: bold;
+  color: #29d9d5;
+  position: relative;
+  margin-left: 15px;
+  font-size: 18px;
+}
+
+.title::after {
+  position: absolute;
+  left: -15px;
+  content: "";
+  height: 100%;
+  background-color: #fff;
+  width: 5px;
+}
+
+.img-desc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.img-desc .left {
+  position: relative;
+  margin-left: 10px;
+  height: 250px;
+}
