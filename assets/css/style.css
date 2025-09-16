@@ -417,3 +417,99 @@ footer p {
 footer p span {
   color: #29d9d5;
 }
+
+/********** Reponsive *********/
+@media screen and (max-width: 750px) {
+  header .menu {
+    display: none;
+  }
+  .btn-reservation {
+    display: none;
+  }
+
+  /** Home **/
+  #home h2 {
+    font-size: 18px;
+  }
+
+  #home h4 {
+    font-size: 28px;
+  }
+  #home p {
+    text-align: center;
+    font-size: 10px;
+  }
+  .find_trip {
+    width: 100%;
+    height: 200px;
+  }
+
+  .find_trip form {
+    flex-wrap: wrap;
+  }
+  .find_trip form div {
+    margin-top: 10px;
+    flex-direction: column;
+    width: 47%;
+  }
+  .find_trip form input[type="submit"] {
+    width: 47%;
+  }
+
+  .home-btn {
+    display: block;
+  }
+
+  /*** About ***/
+  .img-desc {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .img-desc .left,
+  .img-desc .right {
+    width: 100%;
+  }
+  .img-desc .left video {
+    width: 100%;
+  }
+  .img-desc .left video::after {
+    background-color: transparent;
+  }
+
+  .img-desc .left {
+    margin-bottom: 20px;
+  }
+
+  /*** Reponsive menu ***/
+  .responsive-menu {
+    width: 50px;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .responsive-menu::after {
+    position: absolute;
+    content: "";
+    height: 3px;
+    background-color: #29d9d5;
+    width: 28px;
+    box-shadow: 0 10px 0 #29d9d5;
+    transform: translateY(-10px);
+    transition: 0.5s;
+  }
+
+  .responsive-menu::before {
+    position: absolute;
+    content: "";
+    height: 3px;
+    background-color: #29d9d5;
+    width: 28px;
+    transform: translateY(10px);
+    transition: 0.5s;
+  }
+}
