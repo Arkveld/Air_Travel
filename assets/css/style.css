@@ -400,3 +400,20 @@ iframe {
 #contact button:hover {
   letter-spacing: 1px;
 }
+
+/************* Footer ****************/
+footer {
+  width: 100%;
+  background-color: #222;
+  padding: 10px 0;
+  font-size: 14px;
+  text-align: center;
+}
+
+footer p {
+  color: #fff;
+}
+
+footer p span {
+  color: #29d9d5;
+}
