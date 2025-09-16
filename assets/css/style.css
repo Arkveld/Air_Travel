@@ -5,4 +5,84 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 9px;
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+}
+
+body {
+  background-color: #111;
+}
+
+section {
+  margin-top: 50px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*********** header ***********/
+header {
+  background-color: #222;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  padding: 0 5%;
+}
+
+header .logo a {
+  font-size: 25px;
+  color: #29d9d5;
+  text-decoration: 0;
+}
+
+header .logo a span {
+  color: #fff;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu li {
+  margin: 0 15px;
+  list-style: none;
+}
+
+.menu li a {
+  color: #fff;
+  font-size: 14px;
+}
+
+.btn-reservation {
+  color: #29d9d5;
+  font-size: 14px;
+  border: 2px solid #29d9d5;
+  padding: 5px 20px;
+  transition: 0.5s;
+  font-weight: bolder;
+}
+
+.btn-reservation:hover {
+  background-color: #29d9d5;
+  color: #fff;
 }
